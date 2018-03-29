@@ -4,6 +4,6 @@
 #定义函数
 def Hello():
     print 'Hello,world!'
-
+    print 'wzh'
 
 Hello()
