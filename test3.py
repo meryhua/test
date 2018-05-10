@@ -1,5 +1,10 @@
-print 'hello'
-print 'world!'
-print 'wzh'
-print 'dev_son'
-print 'this is dev_son'
+from apscheduler.scheduler import Scheduler
+
+sched = Scheduler()
+
+
+@sched.interval_schedule(seconds=5)
+def my_job():
+    print 'Hello World!'
+
+sched.start()
